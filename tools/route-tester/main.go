@@ -25,7 +25,7 @@ import (
 )
 
 var (
-	// flags
+	// flags defines the command-line flags for the application.
 	kubecontext string
 	environment string
 	team        string
@@ -34,7 +34,7 @@ var (
 )
 
 func init() {
-	// Initialize flags, configurations, or any other setup needed for the application
+	// Initialize flags, configurations, or any other setup needed for the application.
 	flag.StringVar(&kubecontext, "kubecontext", "", "Kubernetes context to use")
 	flag.StringVar(&environment, "environment", "", "Environment to use")
 	flag.StringVar(&environment, "env", "", "Environment to use (alias for --environment)")

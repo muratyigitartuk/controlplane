@@ -52,7 +52,7 @@ kubectl get pods -A -l control-plane=controller-manager
 ### Creating the required Admin Resource
 
 Navigate to the [example admin resource](https://github.com/telekom/controlplane/tree/main/install/local/resources/admin). 
-Adjust these resource as needed.
+Adjust these resources as needed.
 
 Install the admin resources to your local cluster:
 ```bash
@@ -65,7 +65,7 @@ kubectl wait --for=condition=Ready -n controlplane zones/dataplane1
 ### Creating the required Organization Resource
 
 Navigate to the [example organization resource](https://github.com/telekom/controlplane/tree/main/install/local/resources/org). 
-Adjust these resource as needed.
+Adjust these resources as needed.
 
 Install the organization resources to your local cluster:
 ```bash
@@ -78,7 +78,7 @@ kubectl wait --for=condition=Ready -n controlplane teams/phoenix--firebirds
 ### Creating the required Rover Resource
 
 Navigate to the [example rover resource](https://github.com/telekom/controlplane/tree/main/install/local/resources/rover). 
-Adjust these resource as needed.
+Adjust these resources as needed.
 
 Install the rover resources to your local cluster:
 ```bash
